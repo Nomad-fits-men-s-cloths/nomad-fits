@@ -1,8 +1,1 @@
-
-
-
-   const feauturedCollection = document.querySelector("#div")
-   // continue js functions 
-   
-
-
+console.log("hello")
