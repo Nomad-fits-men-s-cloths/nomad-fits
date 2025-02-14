@@ -1,56 +1,124 @@
 
 
-div h2 {
- text-align: center;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
 }
 
-first-section{
-    display: flex;
-  flex-direction:row;
-  align-items: center;
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+h2 {
+  display: flex;
+  text-align: center;
+
+  font-size: 2rem;
+  margin-bottom: 0px;
+  margin-left: 20px;
+}
+
+.featured-collection {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+  padding:0px;
+}
+
+.featured-collection h2 {
+  display: flex;
+  text-align: center;
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+/* Shopping Section */
+.shop-collection {
+  display: flex;
   justify-content: center;
-  gap: 1rem;
-  padding: 1.8rem 1rem;
-  margin: 0.5rem 1rem;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0px;
+}
+
+.product {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  text-align: center;
+}
+
+.product img {
+  width: 70%;
+  border-radius: 10px;
+}
+
+.black-button,
+.yellow-button {
+  display: inline-block;
+  padding: 0px 0px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  margin: 5px 3px;
+}
+
+.black-button {
+  background: black;
+  color: white;
+}
+
+.yellow-button {
+  background: gold;
+  color: black;
+}
+
+h4 {
+  margin: 10px 0 5px;
+  font-size: 1.1rem;
+}
+
+.rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.button {
+  display: block;
+  background: black;
+  color: white;
+  padding: 02px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 0px;
+
+
+
+}
+
+   button{
+  background-color: black;
+  color: white;
+  padding: 5px 15px;
   border-radius: 0.5rem;
-   
-   }
-button{
-  padding: 5px 15px,
-  border-radius 25px;
   margin-top: 10px;
   margin-bottom: 20px;
   cursor: pointer;
-  color: white;
-  background-color: black;
   border: none;
+  outline:none;
 }
    
-
-   middle-section {
-    display: flex;
-  flex-direction:row;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  padding: 1.9rem 1rem;
-  margin: 0.5rem 1rem;
-  border-radius: 0.5rem;
-  background-color: #f5f5f5
-  
-   }
-   
-   
-   last-section {
-    display: flex;
-  flex-direction:row;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  padding: 1.8rem 1rem;
-  margin: 0.5rem 1rem;
-  border-radius: 0.5rem;
-  background-color: #f5f5f5
- 
-  
-   }
