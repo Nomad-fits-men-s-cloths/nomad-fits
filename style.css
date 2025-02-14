@@ -1,0 +1,56 @@
+
+
+div h2 {
+ text-align: center;
+}
+
+first-section{
+    display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.8rem 1rem;
+  margin: 0.5rem 1rem;
+  border-radius: 0.5rem;
+   
+   }
+button{
+  padding: 5px 15px,
+  border-radius 25px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  color: white;
+  background-color: black;
+  border: none;
+}
+   
+
+   middle-section {
+    display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.9rem 1rem;
+  margin: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: #f5f5f5
+  
+   }
+   
+   
+   last-section {
+    display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.8rem 1rem;
+  margin: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: #f5f5f5
+ 
+  
+   }

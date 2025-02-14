@@ -1,3 +1,7 @@
 
 
-console.log("hello")
+
+   const feauturedCollection = document.querySelector("#div")
+   
+
+
