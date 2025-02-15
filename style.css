@@ -1,6 +1,140 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+*body {
+  
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  box-sizing: border-box;
 }
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+h2 {
+  display: flex;
+  text-align: center;
+
+  font-size: 2rem;
+  margin-bottom: 50px;
+  margin-left: 20px;
+}
+
+.featured-collection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 1rem;
+  margin: 2rem 2rem;
+  border-radius: 0.5rem;
+
+}
+
+.featured-collection h2 {
+  display: flex;
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 0px;
+  font-family: 10;
+  
+}
+
+.featured-collection img{
+  width:20%;
+  border-radius: 10px;
+ flex-wrap: wrap;
+ flex-direction: row;
+ 
+}
+
+/* Shopping Section */
+.shop-collection {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0px;
+  padding: 0px;
+  padding-right:14px;
+
+
+}
+
+.product {
+  background: white;
+  padding: 15px;
+  border-radius: 0px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 220px;
+  text-align: center;
+}
+
+.product img {
+  width: 70%;
+  border-radius: 10px;
+}
+
+.black-button,
+.yellow-button {
+  display: inline-block;
+  padding:0px 0px;
+  border-radius: 15px;
+  font-size: 0.5rem;
+  margin: 5px 3px;
+}
+
+.black-button {
+  background: black;
+  color: white;
+  
+}
+
+.yellow-button {
+  background: gold;
+  color: black;
+}
+
+h4 {
+  margin: 10px 0 5px;
+  font-size: 1.1rem;
+}
+
+.rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.button {
+  display: block;
+  background: black;
+  color: white;
+  padding: 02px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 0px;
+
+}
+
+   button{
+  background-color: black;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 0.5rem;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border: none;
+  outline:none;
+}
+   
+
 
