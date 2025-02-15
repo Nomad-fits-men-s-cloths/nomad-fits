@@ -1,9 +1,10 @@
 
-body {
-  font-family: Arial, sans-serif;
+*body {
+  
   margin: 0;
   padding: 0;
   background-color: #f8f8f8;
+  box-sizing: border-box;
 }
 
 h2 {
@@ -17,24 +18,36 @@ h2 {
   text-align: center;
 
   font-size: 2rem;
-  margin-bottom: 0px;
+  margin-bottom: 50px;
   margin-left: 20px;
 }
 
 .featured-collection {
   display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  flex-wrap: wrap;
-  width: 100%;
-  padding:0px;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 1rem;
+  margin: 2rem 2rem;
+  border-radius: 0.5rem;
+
 }
 
 .featured-collection h2 {
   display: flex;
   text-align: center;
   font-size: 1.4rem;
-  margin: 0;
+  margin-bottom: 0px;
+  font-family: 10;
+  
+}
+
+.featured-collection img{
+  width:20%;
+  border-radius: 10px;
+ flex-wrap: wrap;
+ flex-direction: row;
+ 
 }
 
 /* Shopping Section */
@@ -42,16 +55,17 @@ h2 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 0px;
   padding: 0px;
-}
+  padding-right:14px;
+
 
 .product {
   background: white;
   padding: 15px;
-  border-radius: 10px;
+  border-radius: 0px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 280px;
+  width: 220px;
   text-align: center;
 }
 
@@ -63,15 +77,16 @@ h2 {
 .black-button,
 .yellow-button {
   display: inline-block;
-  padding: 0px 0px;
+  padding:0px 0px;
   border-radius: 15px;
-  font-size: 0.8rem;
+  font-size: 0.5rem;
   margin: 5px 3px;
 }
 
 .black-button {
   background: black;
   color: white;
+  
 }
 
 .yellow-button {
@@ -112,10 +127,12 @@ h4 {
   color: white;
   padding: 5px 15px;
   border-radius: 0.5rem;
-  margin-top: 10px;
+  margin-top: 0px;
   margin-bottom: 20px;
   cursor: pointer;
   border: none;
   outline:none;
 }
    
+
+
