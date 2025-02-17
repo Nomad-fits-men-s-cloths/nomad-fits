@@ -150,7 +150,7 @@ select,
 button {
   background-color: #000;
   color: #fff;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: bold;
   padding: 10px 20px;
   border: none;
@@ -184,7 +184,7 @@ a {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;
   padding-bottom: 20px;
   border-bottom: 1px solid #444;
@@ -231,7 +231,7 @@ a {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 27px auto;
   text-align: left;
 }
