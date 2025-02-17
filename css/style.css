@@ -60,15 +60,16 @@ h2 {
 
 h2 {
   font-size: 25px;
-  color: orange;
+  color: black;
   font-weight: bold;
-  margin: 0;
+  margin: 10px 5px;
 }
 
 .filters {
   display: flex;
   align-items: center;
-  gap: 20px;
+  justify-content: space-evenly;
+  gap: 25px;
 }
 
 select,
