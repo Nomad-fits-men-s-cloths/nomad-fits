@@ -52,14 +52,15 @@ h2 {
 .shop-collection {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   background-color: white;
-  padding: 15px 20px;
+  padding: 30px 30px;
   border-radius: 8px;
 }
 
 h2 {
   font-size: 25px;
+  color: orange;
   font-weight: bold;
   margin: 0;
 }
