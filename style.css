@@ -47,6 +47,47 @@ h2 {
   padding: 0 10px 15px;
 }
 
+.shop-collection {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+select,
+.filter-button {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.filter-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+}
+
+.filter-icon {
+  font-size: 14px;
+}
+
 .mainContainer {
   max-width: 1200px;
   margin: auto;
@@ -96,7 +137,7 @@ h2 {
 
 .star-rating {
   font-size: 14px;
-  color: #ff9800;
+  color: #000;
 }
 
 .price {
@@ -117,7 +158,6 @@ button {
 }
 
 button:hover {
-  background-color: #e67e22;
   transform: scale(1.05);
 }
 
