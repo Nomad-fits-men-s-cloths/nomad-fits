@@ -61,7 +61,11 @@ h2 {
 
 h2 {
   font-size: 25px;
+<<<<<<< HEAD
   color: black;
+=======
+  color: orange;
+>>>>>>> 7452d1401997e8535de47bd301413ad45c4f8869
   font-weight: bold;
   margin: 0;
 }
