@@ -60,17 +60,9 @@ h2 {
 
 /* Shopping Section */
 
-.shop-collection {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  background-color: white;
-  padding: 10px 20px;
-  border-radius: 8px;
-}
-
 h2 {
   font-size: 25px;
+  color: orange;
   font-weight: bold;
   margin: 0;
 }
