@@ -1,82 +1,179 @@
-/*
- 
- axios.get("https://api.escuelajs.co/api/v1/products")
-  .then((response) => {
 
-    console.log("response", response);
-  })
-  .catch((error) => {
-    console.log(err);
-  });
-*/
 
-const fetchProducts = async (url) => {
-  try {
-    const response = await axios.get(url);
-    console.log("🚀 ~ fetchProducts ~ response:", response);
+axios.get("https://fakestoreapi.com/products")
+.then(response=>{
+const projet = response.data;
+console.log(projet);
 
-    if (response.status === 200 && response.statusText == "OK") {
-      console.log("data", response.data);
-      return response.data;
-    } else {
-      return [];
-    }
-  } catch (error) {
-    console.log("🚀 ~ fetchProducts ~ error:", error);
-    return [];
-  }
-};
 
-const result = fetchProducts("https://api.escuelajs.co/api/v1/products");
+projet.slice (17,20).forEach(function(featured){
 
-const displayProducts = async () => {
-  const shopCollection = document.querySelector(".shop-collection");
+  featuredCollections(featured)
+})
 
-  const data = await fetchProducts("https://api.escuelajs.co/api/v1/products");
-  console.log("🚀 ~ displayProducts ~ data:", data);
 
-  data.forEach((element) => {
-    // create elementts
-    const productCard = document.createElement("section");
-    const productImage = document.createElement("img");
-    const productTitle = document.createElement("h4");
-    const productDescription = document.createElement("p");
-    const productRating = document.createElement("section");
-    const productStartRating = document.createElement("span");
-    const productPrice = document.createElement("span");
-    const productAddCart = document.createElement("button");
+}).catch(err => console.error('there is an error:', err));
 
-    // add their classes here:
-    productCard.className = "product";
-    productRating.className = "rating";
-    productStartRating.className = "star-rating";
-    productPrice.className = "price";
 
-    // give their values here:
-    productImage.src = "https://i.imgur.com/FDwQgLy.jpeg";
-    console.log(`🚀 ~ data.forEach ~ element?.images[1]`, element?.images[1]);
 
-    productImage.alt = element?.title;
-    productTitle.textContent = element?.title;
-    productDescription.textContent = `${element?.description?.slice(
-      0,
-      250
-    )} Read more..`;
-    productStartRating.textContent = console.log( `⭐4.8 (124 reviews)` [1]);
-    productPrice.textContent = `$${element?.price}`;
-    productAddCart.textContent = alert(`Added ${product.title} Add to cart!`);
+function featuredCollections(featured){
 
-    // append all childs into their parents
-    productRating.append(productStartRating, productPrice, productAddCart);
-    productCard.append(
-      productImage,
-      productTitle,
-      productDescription,
-      productRating
-    );
 
-    shopCollection.appendChild(productCard);
-  });
-};
+  const featuredcard = document.querySelector(".featured-collection")
 
-displayProducts();
+  const  adventure= document.createElement("section")
+  adventure.className = "adventure"
+
+  const adventureImage = document.createElement("img")
+  adventureImage.src = featured.image
+  
+
+  const adventuretTitle = document.createElement("h4")
+  adventuretTitle.textContent = featured.title
+
+
+const  adventuredescription = document.createElement("p")
+adventuredescription.textContent = featured.description
+
+adventure.appendChild(adventureImage)
+adventure.appendChild(adventuretTitle)
+adventure.appendChild(adventuredescription)
+
+
+featuredcard.appendChild(adventure)
+
+
+
+console.log(featuredcard)
+
+}
+
+  
+
+
+
+
+
+axios.get('https://fakestoreapi.com/products')
+.then(response => {
+ const dharka = response.data;
+ console.log(dharka);
+
+ dharka.slice(0,6).forEach(function(product){
+  createProduct(product)
+ })
+            
+}).catch(err => console.error('something is wrong:', err));
+
+
+
+
+function createProduct(product){
+
+  const shopCollection = document.querySelector(".shop-collection")
+
+  const productSection = document.createElement("section")
+  productSection.className = "product"
+
+
+
+  const productImage = document.createElement("img")
+  productImage.src = product.image
+  
+
+
+  const productTitle = document.createElement("h4")
+  productTitle.textContent = product.title
+
+
+
+const productDescription = document.createElement("p")
+productDescription.textContent = product.description
+
+
+
+const ratingSection = document.createElement("section")
+  ratingSection.className = "rating"
+  
+  const ratingStar = document.createElement("span")
+  ratingStar.className = "star-rating"
+  ratingStar.textContent = `⭐ ${product.rating.rate } ${product.rating.count} reviews `
+
+  const productPrice = document.createElement("span")
+  productPrice.className = "price"
+  productPrice.textContent = ` $${product.price}`
+  
+  const productButton = document.createElement("button")
+  productButton.textContent = "Add to Cart"
+
+
+  productSection.appendChild(productImage)
+  productSection.appendChild(productTitle)
+  productSection.appendChild(productDescription)
+
+
+  
+ratingSection.appendChild(ratingStar)
+ratingSection.appendChild(productPrice)
+ratingSection.appendChild(productButton)
+
+productSection.appendChild(ratingSection)
+shopCollection.appendChild(productSection)
+
+
+console.log(shopCollection)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
