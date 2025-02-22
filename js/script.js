@@ -6,7 +6,7 @@ const projet = response.data;
 console.log(projet);
 
 
-projet.slice (17,20).forEach(function(featured){
+projet.slice (16,20).forEach(function(featured){
 
   featuredCollections(featured)
 })
@@ -59,7 +59,7 @@ axios.get('https://fakestoreapi.com/products')
  const dharka = response.data;
  console.log(dharka);
 
- dharka.slice(0,6).forEach(function(product){
+ dharka.slice(1,7).forEach(function(product){
   createProduct(product)
  })
             
