@@ -44,7 +44,7 @@ axios
           product.category === "men's clothing" ||
           product.category === "women's clothing"
       )
-      .slice(0, 4); // waxaan heleynaa 4 dhar ugu horeeyp
+      .slice(1, 4); // waxaan heleynaa 4 dhar ugu horeeyp
     
     console.log("Featured Products:", featuredProducts);
     featuredProducts.forEach((featured) => featuredCollections(featured));
