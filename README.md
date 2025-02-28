@@ -31,8 +31,8 @@ Nomad fits is an Ecommerce website done five of Gabischool students as the first
  ## Project Structure
 
 - \`index.html\`: The main HTML file
-- \`About.html\`: The about us HTML file
-- \`contact.html\`: contact us HTML file
+- \`About.html\`: About us HTML file
+- \`contact.html\`:Contact us HTML file
 - \`styles.css\`: Contains all the styles for the project
 - \`script.js\`: JavaScript file with the logic for fetching, displaying products and axios
   
