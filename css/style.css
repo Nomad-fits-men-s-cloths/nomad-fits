@@ -143,32 +143,38 @@ nav ul li a:hover::after {
     flex-wrap: wrap;
     padding: var(--spacing-sm);
     position: relative;
+    width: 100%;
+    height: 8vh;
   }
 
   .mobile-menu-toggle {
     display: block;
-    order: 3;
+    position: absolute;
+    right: 0;
   }
 
-  .logo {
-    order: 1;
+  .logo{
+   position: absolute;
+   left: 0;
   }
+
+
 
   .nav-icons {
-    order: 2;
+   display: none;
   }
 
   .nav-menu {
-    order: 4;
     width: 100%;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-in-out;
+    height: 80vh;
+    margin-top: 50px;
+    padding-left: 50px;
+    transform: translateX(-150%);
     background-color: var(--background-dark);
   }
 
   .nav-menu.active {
-    max-height: 400px;
+    transform: translateX(-50%);
   }
 
   .nav-menu ul {
@@ -669,6 +675,7 @@ nav ul li a:hover::after {
   background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), 
               url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80") center/cover;
   color: var(--text-white);
+  margin: 5% 0;
 }
 
 .contact-content {
@@ -887,6 +894,10 @@ nav ul li a:hover::after {
   :root {
     --container-width: 90%;
   }
+
+  .contact-section {
+    margin: 20% 0;
+  }
   
   .about-left {
     grid-template-columns: 1fr;
@@ -957,7 +968,7 @@ nav ul li a:hover::after {
 
 @media (max-width: 480px) {
   .hero-content h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .featured-Title h2,
@@ -997,5 +1008,173 @@ nav ul li a:hover::after {
   
   .bottomNavLinks a {
     margin: 0 var(--spacing-xs);
+  }
+
+  .explore{
+    margin-bottom: 20px;
+  }
+}
+
+/* about us css */
+
+.about-slide{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #EFEFEF;
+}
+
+.slide-container {
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+}
+
+.slide-content {
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+.card {
+  border-radius: 25px;
+  background-color: #FFF;
+}
+
+.image-content,
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+
+.image-content {
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #FF9D23;
+  border-radius: 25px 25px 0 25px;
+}
+
+.overlay::before,
+.overlay::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #FF9D23;
+}
+
+.overlay::after {
+  border-radius: 0 25px 0 0;
+  background-color: #FFF;
+}
+
+.card-image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #FFF;
+  padding: 3px;
+}
+
+.card-image .card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #FF9D23;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+
+.description {
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+}
+
+.button {
+  border: none;
+  font-size: 16px;
+  color: #FFF;
+  padding: 8px 16px;
+  background-color: #FF9D23;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background: #f58803;
+}
+
+.swiper-navBtn {
+  color: #FF9D23;
+  transition: color 0.3s ease;
+}
+
+.swiper-navBtn:hover {
+  color: #FF9D23;
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  font-size: 35px;
+}
+
+.swiper-button-next {
+  right: 0;
+}
+
+.swiper-button-prev {
+  left: 0;
+}
+
+.swiper-pagination-bullet {
+  background-color: #FF9D23;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #FF9D23;
+}
+
+@media screen and (max-width: 580px) {
+  .about-slide{
+    margin: 25% 0;
+  }
+
+  .slide-content {
+    margin: 0 10px;
+  }
+
+  .card{
+    width: 80%;
+    height: 80%;
+  }
+
+  
+
+  .swiper-navBtn {
+    display: none;
   }
 }
