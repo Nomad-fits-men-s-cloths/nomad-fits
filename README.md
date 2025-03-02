@@ -51,6 +51,10 @@ Nomad fits is an Ecommerce website done five of Gabischool students as the first
 - [Fake Store API Documentation (https://fakestoreapi.com/products)
 - [Axios Documentation] (https://axios-http.com/docs/intro)
 
+  ## Demo Nomad fits
+- [] (https://boisterous-sprinkles-be7493.netlify.app)
+  
+
 
 
 
